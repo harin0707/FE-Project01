@@ -4,7 +4,6 @@ import {Route, Routes, useLocation} from 'react-router-dom'
 import Page from '../page/Page'
 import '../styled/Transition.css'
 
-
 const Transition = ({jejuDatas}) => {
     const location = useLocation();
 
@@ -12,12 +11,13 @@ const Transition = ({jejuDatas}) => {
         <TransitionGroup className='transition-group'>
             <CSSTransition key={location.pathname} classNames='fade' timeout={1000}>
                 <Routes location={location}>
-                    <Route exact path='/' element={<Page/>}/>
+                    <Route exact path='/' element={<Page val={false}/>}/>
                     {jejuDatas.map((pic)=> (
                         <Route 
                         path={`/${pic.seq}`}
                         element={
                             <Page 
+                            val={true}
                             image={pic.cover}
                             author={pic.author}
                             name={pic.name}

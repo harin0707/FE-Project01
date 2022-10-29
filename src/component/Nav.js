@@ -7,9 +7,10 @@ const Nav = ({jejuDatas}) => {
     const [btnActive, setBtnActive] = useState(false);
 
     const toggleActive = (e) =>{
+        //돔에서 value 값을 읽어오고 싶을 때
         setBtnActive(e.currentTarget.getAttribute('value'))
-        
         console.log(btnActive)
+        console.log(e.target)
     }
     
 
@@ -26,7 +27,6 @@ const Nav = ({jejuDatas}) => {
                         {parseInt(num)+1} 
                     </StyledLink>
             ))}
-            {/* <img src={jejuDatas[0].cover} alt='사진'/> */}
         </NavContainter>
     )
 }
