@@ -20,7 +20,7 @@ color: ${props => props.theme.maincolor};
 background-color: transparent;
 border: 0vw transparent;
 cursor: pointer;
-font-size: 2vw;
+font-size: 1.5vw
 `
 
 export const StyledLink = styled(Link)`
