@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import { NavContainter, StyledLink } from '../styled/styled' 
+import {Link} from "react-router-dom"
+import { NavContainter, StyledLink, Header } from '../styled/styled' 
 import '../styled/button.css'
 
 const Nav = ({jejuDatas}) => {
@@ -12,10 +13,18 @@ const Nav = ({jejuDatas}) => {
         console.log(btnActive)
         console.log(e.target)
     }
+
+    // const backToHome = () =>{
+        
+
+    // }
     
 
     return (
+        <>
+        <Link to="/"><Header> 제주 현대 미술관 작품 전시 </Header></Link>
         <NavContainter>
+            
             {jejuDatas.map((pic, num)=> (
                     <StyledLink 
                     to={`/${pic.seq}`} 
@@ -28,6 +37,7 @@ const Nav = ({jejuDatas}) => {
                     </StyledLink>
             ))}
         </NavContainter>
+        </>
     )
 }
 

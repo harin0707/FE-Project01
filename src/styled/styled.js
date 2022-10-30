@@ -14,9 +14,13 @@ justify-content: center;
 align-items: center;
 `
 
-export const Header = styled.div`
-padding: 3vw;
+export const Header = styled.button`
+margin: 3vw;
 color: ${props => props.theme.maincolor};
+background-color: transparent;
+border: 0vw transparent;
+cursor: pointer;
+font-size: 2vw;
 `
 
 export const StyledLink = styled(Link)`
