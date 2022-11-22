@@ -6,6 +6,7 @@ import jeju from '../data/jeju.JPG';
 // val == true -> 그림이미지와 설명
 
 const Page = ({image, author, name, material, year, val}) => {
+
     return (
         <PageContainer>
             {val === false 
@@ -23,9 +24,12 @@ const Page = ({image, author, name, material, year, val}) => {
                 <div>{year}</div>
                 <div>{material}</div>
             </Desc>
+
+            
             </>
 
             }
+        
         </PageContainer>
     )
 

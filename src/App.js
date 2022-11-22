@@ -7,6 +7,7 @@ import jejuData from './data/picture.json'
 import GlobalStyled from './styled/GlobalStyled.js';
 import {ThemeProvider} from 'styled-components'
 import { theme } from './styled/theme.js';
+import {KakaoButton} from './component/KakaoButton.js'
 
 const App = () => {
   const jejuDatas= jejuData.jejunetApi.items.item
@@ -20,7 +21,12 @@ const App = () => {
           <Container> 
             <Nav jejuDatas={jejuDatas}/>
             <Transition jejuDatas={jejuDatas}/>
+
+            <KakaoButton/>
           </Container>
+          
+
+          
       </Router> 
     </ThemeProvider>
     </>

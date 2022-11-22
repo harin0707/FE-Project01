@@ -13,11 +13,6 @@ const Nav = ({jejuDatas}) => {
         console.log(btnActive)
         console.log(e.target)
     }
-
-    // const backToHome = () =>{
-        
-
-    // }
     
 
     return (

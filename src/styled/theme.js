@@ -1,7 +1,6 @@
 import {css} from 'styled-components'
 
 export const theme = {
-    
     mainColor: '#797979',
 
     forestgreen:'#228B22',

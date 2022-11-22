@@ -9,7 +9,7 @@
     }
     
     .fade-enter-active {
-        opacity: 1;
+        opacity: 0.5;
         transform: rotateZ(0);
         transition: all 1s ease-in;
     }
