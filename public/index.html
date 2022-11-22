@@ -26,16 +26,18 @@
     -->
     <title>React App</title>
 
-    <script 
+    <script
     src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js" 
     integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/" 
-    crossorigin="anonymous">
+    crossorigin="anonymous"
+    
+    >
     </script>
 
     <script>
-      Kakao.init('1665569fb1877b599992ac86809857fc');
+      window.Kakao.init('1665569fb1877b599992ac86809857fc');
       console.log(Kakao.isInitialized());
-      console.log(Kakao.init);
+      console.log(window.Kakao);
     </script>
     
 
