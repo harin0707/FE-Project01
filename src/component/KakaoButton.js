@@ -14,6 +14,7 @@ export const KakaoButton = () => {
             container: "#kakao-link-btn",
             templateId: 86259,
             requestUrl: 'https://harin0707.github.io/FE-Project01/'
+            
         })
         console.log('실행중');
     }
